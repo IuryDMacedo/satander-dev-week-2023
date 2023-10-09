@@ -7,8 +7,10 @@ Java RESTful API criada para a santander Dev Week
 classDiagram
   class User {
     - name: String
-    + getBalance(): double
-    + getLimit(): double
+    -Account: account
+    -Feature[] features
+    -Card card
+    -News[] news
   }
 
   class Account {
