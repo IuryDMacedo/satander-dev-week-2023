@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Service;
 
-@OpenAPIDefinition(servers = {@Server(url ="/" , description = "Default server URL")})
+@OpenAPIDefinition(servers = { @Server(url ="/" , description = "Default server URL")})
 @SpringBootApplication
 public class Application {
 
