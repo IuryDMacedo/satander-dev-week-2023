@@ -1,5 +1,7 @@
 # Satander Dev Week 2023
-Java RESTful API criada para a santander Dev Week
+
+### Projeto final do BootCamp DIO com Santander.
+criação de uma pequena conta bancaria do aplicativo do santander.
 
 ## Diagrama de Classes 
 
