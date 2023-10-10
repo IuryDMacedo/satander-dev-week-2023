@@ -2,7 +2,9 @@ package me.dio.domain.model;
 
 import jakarta.persistence.*;
 
-@Entity(name = "tab_card")
+import java.math.BigDecimal;
+
+@Entity(name = "tb_card")
 public class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -10,8 +12,8 @@ public class Card {
 
     @Column(unique = true)
     private String number;
-    @Column(name = "available_limit",precision = 2)
-    private double limit;
+    @Column(name = "available_limit", precision = 13 , scale = 2)
+    private BigDecimal limit;
 
     public Long getId() {
         return id;
@@ -29,11 +31,11 @@ public class Card {
         this.number = number;
     }
 
-    public double getLimit() {
+    public BigDecimal getLimit() {
         return limit;
     }
 
-    public void setLimit(double limit) {
+    public void setLimit(BigDecimal limit) {
         this.limit = limit;
     }
 }
